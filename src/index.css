@@ -5,9 +5,14 @@ body {
   font-size: 14px;
   line-height: 125%;
 }
+
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"), url(./fonts/Montserrat.ttf) format("woff");
 }
-
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: local("Montserrat-Bold"),
+    url(./fonts/MontserratMedium.ttf) format("woff");
+}
 /* Image */

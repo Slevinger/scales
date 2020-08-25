@@ -107,7 +107,8 @@ const StyledContent = styled.div`
     align-items: center;
   }
   .bold {
-    font-weight: 500;
+    font-family: Montserrat-Bold;
+    font-weight: "bold";
   }
 `;
 const StyledContentRow = styled.div`
