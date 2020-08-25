@@ -6,7 +6,6 @@ import LikeIcon from "./LikeIcon";
 import DislikeIcon from "./DislikeIcon";
 
 const App = styled.div`
-  padding: 15px;
   flex-direction: column;
 
   align-items: center;
@@ -121,7 +120,7 @@ const StyledContentRow = styled.div`
 const StyledProductImage = styled.div`
   background: url(https://sc02.alicdn.com/kf/HTB1_CHmLFXXXXcLXVXXq6xXFXXXW.jpg_350x350.jpg);
   background-repeat: no-repeat;
-  height: 371px;
+  height: 325px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -189,7 +188,7 @@ const ContentTile = () => {
           </StyledContentRow>
         </div>
       </StyledContent>
-      <StyledContentRow style={{ position: "fixed", bottom: "20px" }}>
+      <StyledContentRow style={{ bottom: "20px" }}>
         <LikeIcon />
         <DislikeIcon />
       </StyledContentRow>
