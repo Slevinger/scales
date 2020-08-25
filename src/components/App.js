@@ -154,38 +154,45 @@ const Param = ({ title, value }) => {
 
 const ContentTile = () => {
   return (
-    <StyledContent>
-      <div style={{ padding: "19px" }}>
-        <div className="details">
-          <Avatar
-            style={{
-              borderRadius: "15px",
-              overflow: "hidden",
-              marginRight: "8px",
-            }}
-            facebookId="100008343750912"
-            size="30"
-          />
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <StyledContent>
+        <div style={{ padding: "19px" }}>
+          <div className="details">
+            <Avatar
+              style={{
+                borderRadius: "15px",
+                overflow: "hidden",
+                marginRight: "8px",
+              }}
+              facebookId="100008343750912"
+              size="30"
+            />
+            <StyledContentRow>
+              <Param title={"Styled by"} value={"Adi"} />
+              <Param title={"From"} value={"FL"} />
+            </StyledContentRow>
+          </div>
+        </div>
+        <StyledProductImage>
+          <StyledTopImage />
+          <StyledBottomImage />
+        </StyledProductImage>
+        <div style={{ padding: "19px" }}>
           <StyledContentRow>
-            <Param title={"Styled by"} value={"Adi"} />
-            <Param title={"From"} value={"FL"} />
+            <StyledPrice>33.5$</StyledPrice>
+            <div>American Eagle</div>
           </StyledContentRow>
         </div>
-      </div>
-      <StyledProductImage>
-        <StyledTopImage />
-        <StyledBottomImage />
-      </StyledProductImage>
-      <StyledContentRow>
-        <div style={{ padding: "19px" }}>
-          <StyledPrice>33.5$</StyledPrice>
-          <div>American Eagle</div>
-        </div>
-      </StyledContentRow>
-      <StyledContentRow>
+      </StyledContent>
+      <StyledContentRow style={{ position: "fixed", bottom: "20px" }}>
         <LikeIcon />
         <DislikeIcon />
       </StyledContentRow>
-    </StyledContent>
+    </div>
   );
 };

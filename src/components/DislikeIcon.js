@@ -26,6 +26,7 @@ export default () => (
       stroke-width="4"
       stroke-linecap="round"
       stroke-linejoin="round"
+      stroke="#241959"
     />
     <path
       d="M52 44L76 68"
@@ -68,17 +69,7 @@ export default () => (
           result="shape"
         />
       </filter>
-      <linearGradient
-        id="paint0_linear"
-        x1="52"
-        y1="44"
-        x2="76"
-        y2="68"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stopColor="#5C5388" />
-        <stop offset="1" stopColor="#241959" />
-      </linearGradient>
+
       <linearGradient
         id="paint1_linear"
         x1="52"
@@ -87,8 +78,8 @@ export default () => (
         y2="68"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#5C5388" />
-        <stop offset="1" stopColor="#241959" />
+        <stop stopColor="#241959" />
+        <stop offset="1" stopColor="#5C5388" />
       </linearGradient>
     </defs>
   </svg>
